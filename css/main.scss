@@ -5,7 +5,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     opacity: 1;
-    
 }
 .header{
     color: $color-secundary;
@@ -52,5 +51,66 @@ body{
                 border: 1px solid $color-secundary;
             }
         }
+    }
+}
+.content{
+    position: relative;
+  .text{
+    position: absolute;
+    left: 200px;
+    width: 520px;
+    height: 240px;
+    h2{
+        margin: 10px 0px 20px 0px;
+        color: $color-primary;
+        font-size: 20px;
+    }
+  }
+  .form{
+    position:absolute;
+    right: 101px;
+    width: 340px;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        .labelForm{
+            color: $color-primary;
+            margin: 10px 10px 0 0;
+            font-size: 14px;
+        }
+        input{
+            margin:5px 0px;
+            padding: 5px;
+        }
+        .radioButtons{
+            flex-direction: row;
+            margin: 10px 0px 20px 0px;
+        }
+        .buttonSubmit{
+            padding: 10px;
+            font-size: 16px;
+            background-color: $color-secundary;
+            color: $color-primary;
+            border: 1px solid $color-primary;
+            border-radius: 4px;
+        }
+    }
+  }
+}
+.store{
+    margin: 460px 0px 0px 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .line{
+        height: 1px;
+        width: 390px;
+        border: 1px solid rgba(184, 184, 184, 0.9);
+    }
+    h2{
+        font-size: 18px;
+        margin: 0 10px 0 10px;
+        color: $color-primary;
     }
 }

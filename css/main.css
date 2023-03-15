@@ -53,4 +53,66 @@ body {
   background-color: #707070;
   color: white;
   border: 1px solid white;
+}
+
+.content {
+  position: relative;
+}
+.content .text {
+  position: absolute;
+  left: 200px;
+  width: 520px;
+  height: 240px;
+}
+.content .text h2 {
+  margin: 10px 0px 20px 0px;
+  color: #707070;
+  font-size: 20px;
+}
+.content .form {
+  position: absolute;
+  right: 101px;
+  width: 340px;
+}
+.content .form form {
+  display: flex;
+  flex-direction: column;
+}
+.content .form form .labelForm {
+  color: #707070;
+  margin: 10px 10px 0 0;
+  font-size: 14px;
+}
+.content .form form input {
+  margin: 5px 0px;
+  padding: 5px;
+}
+.content .form form .radioButtons {
+  flex-direction: row;
+  margin: 10px 0px 20px 0px;
+}
+.content .form form .buttonSubmit {
+  padding: 10px;
+  font-size: 16px;
+  background-color: white;
+  color: #707070;
+  border: 1px solid #707070;
+  border-radius: 4px;
+}
+
+.store {
+  margin: 460px 0px 0px 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.store .line {
+  height: 1px;
+  width: 390px;
+  border: 1px solid rgba(184, 184, 184, 0.9);
+}
+.store h2 {
+  font-size: 18px;
+  margin: 0 10px 0 10px;
+  color: #707070;
 }/*# sourceMappingURL=main.css.map */
