@@ -65,6 +65,9 @@ body{
         color: $color-primary;
         font-size: 20px;
     }
+    p{
+        color: $color-primary;
+    }
   }
   .form{
     position:absolute;
@@ -94,6 +97,10 @@ body{
             color: $color-primary;
             border: 1px solid $color-primary;
             border-radius: 4px;
+            &:hover{
+                background-color: $color-primary;
+                color: $color-secundary;
+            }
         }
     }
   }
@@ -103,6 +110,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
     .line{
         height: 1px;
         width: 390px;
@@ -112,5 +120,81 @@ body{
         font-size: 18px;
         margin: 0 10px 0 10px;
         color: $color-primary;
+    }
+    .products-section{
+        width: 980px;
+        max-height: 1000px;
+        position: absolute;
+        top: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color: $color-primary;
+
+        .products{
+            width: 200px;
+            margin: 20px 20px; 
+            .divProductImg{
+                width: 200px;
+                height: 140px;
+                border: 1px solid $color-primary;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            .productName{
+                color: $color-primary;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            .productDescription{
+                color: $color-primary;
+                font-size: 12px;
+                margin: 5px 0px;
+            }
+            .oldPrice{
+                font-size: 10px;
+                margin-bottom: 5px;
+            }
+            .price{
+                font-size: 16px;
+                margin-bottom: 3px;
+            }
+            .installments{
+                font-size: 12px;
+                display: block;
+                margin-bottom: 10px ;
+            }
+            .buyBtn{
+                background-color: $color-secundary;
+                font-size: 16px;
+                padding: 5px;
+                width: 100%;
+                border: 1px solid $color-primary;
+                border-radius: 4px;
+                color: $color-primary;
+                box-shadow: 1px 1px 1px #cccbcb;
+
+                &:hover{
+                    background-color: $color-primary;
+                    color: $color-secundary;
+                }
+            }
+        }
+        .moreBtn{
+            position: relative;
+            left: 380px;
+            margin-top: 20px;
+            background-color: $color-secundary;
+            font-size: 16px;
+            padding: 5px 20px;
+            border: 1px solid $color-primary;
+            border-radius: 4px;
+            color: $color-primary;
+            box-shadow: 1px 1px 1px #cccbcb;
+            &:hover{
+                background-color: $color-primary;
+                color: $color-secundary;
+            }
+        }
     }
 }
