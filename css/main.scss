@@ -5,196 +5,273 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     opacity: 1;
-}
-.header{
-    color: $color-secundary;
-    background-color: $color-primary;
-    height: 450px;
-    text-align: center;
-    padding: 30px;
-    margin-bottom: 80px;
+    
+    .header{
+        color: $color-secundary;
+        background-color: $color-primary;
+        height: 450px;
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 80px;
 
-    &.header-effect{
-        transform: skew(0deg, 5deg);
-        margin-top: -100px;
-    }
-    .header-content{
-        margin-top: 160px;
-        transform: skew(0deg, -5deg);
-    }
-    span{
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    h1{
-        margin-bottom: 20px;
-        font-size: 40px;
-    }
-    p{
-        font-size: 14px;
-    }
-    .header-links{
-        margin-top: 50px;
-        .link{
-            margin: 0 20px;
-            padding: 11px 30px;
-            border: none;
-            border-radius: 4px;
-            color: $color-primary;
-            font-size: 14px;
-            background-color: $color-secundary;
-            text-decoration: none;
-
-            &:hover{
-                background-color: $color-primary;
-                color: $color-secundary;
-                border: 1px solid $color-secundary;
-            }
+        &.header-effect{
+            transform: skew(0deg, 5deg);
+            margin-top: -100px;
         }
-    }
-}
-.content{
-    position: relative;
-  .text{
-    position: absolute;
-    left: 200px;
-    width: 520px;
-    height: 240px;
-    h2{
-        margin: 10px 0px 20px 0px;
-        color: $color-primary;
-        font-size: 20px;
-    }
-    p{
-        color: $color-primary;
-    }
-  }
-  .form{
-    position:absolute;
-    right: 101px;
-    width: 340px;
-
-    form{
-        display: flex;
-        flex-direction: column;
-        .labelForm{
-            color: $color-primary;
-            margin: 10px 10px 0 0;
+        .header-content{
+            margin-top: 160px;
+            transform: skew(0deg, -5deg);
+        }
+        span{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        h1{
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+        p{
             font-size: 14px;
         }
-        input{
-            margin:5px 0px;
-            padding: 5px;
-        }
-        .radioButtons{
-            flex-direction: row;
-            margin: 10px 0px 20px 0px;
-        }
-        .buttonSubmit{
-            padding: 10px;
-            font-size: 16px;
-            background-color: $color-secundary;
-            color: $color-primary;
-            border: 1px solid $color-primary;
-            border-radius: 4px;
-            &:hover{
-                background-color: $color-primary;
-                color: $color-secundary;
-            }
-        }
-    }
-  }
-}
-.store{
-    margin: 460px 0px 0px 200px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-    .line{
-        height: 1px;
-        width: 390px;
-        border: 1px solid rgba(184, 184, 184, 0.9);
-    }
-    h2{
-        font-size: 18px;
-        margin: 0 10px 0 10px;
-        color: $color-primary;
-    }
-    .products-section{
-        width: 980px;
-        max-height: 1000px;
-        position: absolute;
-        top: 40px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        color: $color-primary;
-
-        .products{
-            width: 200px;
-            margin: 20px 20px; 
-            .divProductImg{
-                width: 200px;
-                height: 140px;
-                border: 1px solid $color-primary;
-                margin-bottom: 10px;
-                text-align: center;
-            }
-            .productName{
-                color: $color-primary;
-                font-size: 14px;
-                margin-bottom: 10px;
-            }
-            .productDescription{
-                color: $color-primary;
-                font-size: 12px;
-                margin: 5px 0px;
-            }
-            .oldPrice{
-                font-size: 10px;
-                margin-bottom: 5px;
-            }
-            .price{
-                font-size: 16px;
-                margin-bottom: 3px;
-            }
-            .installments{
-                font-size: 12px;
-                display: block;
-                margin-bottom: 10px ;
-            }
-            .buyBtn{
-                background-color: $color-secundary;
-                font-size: 16px;
-                padding: 5px;
-                width: 100%;
-                border: 1px solid $color-primary;
+        .header-links{
+            margin-top: 50px;
+            .link{
+                margin: 0 20px;
+                padding: 11px 30px;
+                border: none;
                 border-radius: 4px;
                 color: $color-primary;
-                box-shadow: 1px 1px 1px #cccbcb;
+                font-size: 14px;
+                background-color: $color-secundary;
+                text-decoration: none;
 
+                &:hover{
+                    background-color: $color-primary;
+                    color: $color-secundary;
+                    border: 1px solid $color-secundary;
+                }
+            }
+        }
+    }
+    .content{
+        margin: 0 10px;
+        width: 1100px;
+        height: 300px;
+    .text{
+        position: absolute;
+        left: 160px;
+        width: 520px;
+        height: 240px;
+        h2{
+            margin: 10px 0px 20px 0px;
+            color: $color-primary;
+            font-size: 20px;
+        }
+        p{
+            color: $color-primary;
+        }
+    }
+    .form{
+        position:absolute;
+        right: 161px;
+        width: 340px;
+
+        form{
+            display: flex;
+            flex-direction: column;
+            .labelForm{
+                color: $color-primary;
+                margin: 10px 10px 0 0;
+                font-size: 14px;
+            }
+            input{
+                margin:5px 0px;
+                padding: 5px;
+            }
+            .radioButtons{
+                flex-direction: row;
+                margin: 10px 0px 20px 0px;
+            }
+            .buttonSubmit{
+                padding: 10px;
+                font-size: 16px;
+                background-color: $color-secundary;
+                color: $color-primary;
+                border: 1px solid $color-primary;
+                border-radius: 4px;
                 &:hover{
                     background-color: $color-primary;
                     color: $color-secundary;
                 }
             }
         }
-        .moreBtn{
+    }
+    }
+    .store{
+        margin: 30px 0px 0px 0px;
+        .lineTxt{
+            display: flex;
             position: relative;
-            left: 380px;
-            margin-top: 20px;
-            background-color: $color-secundary;
-            font-size: 16px;
-            padding: 5px 20px;
-            border: 1px solid $color-primary;
-            border-radius: 4px;
+            left: 140px;
+            width: 1020px;
+            flex-direction: row;
+            align-items: center;
+            .line{
+                height: 1px;
+                width: 380px;
+                border: 1px solid rgba(184, 184, 184, 0.9);
+            }
+            .text{
+                width: 201px;
+            }
+            h2{
+                font-size: 18px;
+                margin: 0 10px 0 10px;
+                color: $color-primary;
+            }
+        }
+        .products-section{
+            margin: 20px 0px 40px 130px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
             color: $color-primary;
-            box-shadow: 1px 1px 1px #cccbcb;
-            &:hover{
-                background-color: $color-primary;
-                color: $color-secundary;
+
+            .products{
+                width: 200px;
+                height: 300px;
+                margin: 20px 20px; 
+                .divProductImg{
+                    width: 200px;
+                    height: 140px;
+                    border: 1px solid $color-primary;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+                .productName{
+                    color: $color-primary;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+                .productDescription{
+                    color: $color-primary;
+                    font-size: 12px;
+                    margin: 5px 0px;
+                }
+                .oldPrice{
+                    font-size: 10px;
+                    margin-bottom: 5px;
+                }
+                .price{
+                    font-size: 16px;
+                    margin-bottom: 3px;
+                }
+                .installments{
+                    font-size: 12px;
+                    display: block;
+                    margin-bottom: 10px ;
+                }
+                .buyBtn{
+                    background-color: $color-secundary;
+                    font-size: 16px;
+                    padding: 5px;
+                    width: 100%;
+                    border: 1px solid $color-primary;
+                    border-radius: 4px;
+                    color: $color-primary;
+                    box-shadow: 1px 1px 1px #cccbcb;
+
+                    &:hover{
+                        background-color: $color-primary;
+                        color: $color-secundary;
+                    }
+                }
+            }
+        }
+        .btn{
+        margin-left: 505px;
+            .moreBtn{
+                width: 280px;
+                background-color: $color-secundary;
+                font-size: 16px;
+                padding: 5px 20px;
+                border: 1px solid $color-primary;
+                border-radius: 4px;
+                color: $color-primary;
+                box-shadow: 1px 1px 1px #cccbcb;
+                &:hover{
+                    background-color: $color-primary;
+                    color: $color-secundary;
+                }
             }
         }
     }
-}
+    .share{
+        .lineTxt{
+            margin: 100px 0px 40px 0px;
+            display: flex;
+            position: relative;
+            left: 140px;
+            width: 1050px;
+            flex-direction: row;
+            align-items: center;
+            .line{
+                height: 1px;
+                width: 380px;
+                border: 1px solid rgba(184, 184, 184, 0.9);
+            }
+            .text{
+                width: 201px;
+            }
+            h2{
+                font-size: 15px;
+                margin: 0 10px 0 15px;
+                color: $color-primary;
+            }   
+        }   
+        span{
+            color: $color-primary;
+            font-size: 14px;
+            margin-left: 360px;
+        }   
+        .form{
+            margin: 40px 0px 20px 320px;
+            display: block;
+            div{
+                display: flex;
+                .inputs{
+                    display: flex;
+                    flex-direction: column;
+                    width: 300px;
+                    margin:0px 40px 0px 0px;
+                    .labelShare{
+                        color: $color-primary;
+                        margin: 10px 10px 0 0;
+                        font-size: 14px;
+                    }
+                    input{
+                        margin:5px 0px;
+                        padding: 5px;
+                    }
+                }
+            }   
+            .btnShare{
+                display: block;
+                width: 280px;
+                background-color: $color-secundary;
+                font-size: 16px;
+                padding: 5px 20px;
+                border: 1px solid $color-primary;
+                border-radius: 4px;
+                color: $color-primary;
+                box-shadow: 1px 1px 1px #cccbcb;
+                margin: 30px 0px 0px 190px;
+                &:hover{
+                    background-color: $color-primary;
+                    color: $color-secundary;
+                }
+
+            }
+        }
+    }
+}    

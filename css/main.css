@@ -8,8 +8,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   opacity: 1;
 }
-
-.header {
+body .header {
   color: white;
   background-color: #707070;
   height: 450px;
@@ -17,29 +16,29 @@ body {
   padding: 30px;
   margin-bottom: 80px;
 }
-.header.header-effect {
+body .header.header-effect {
   transform: skew(0deg, 5deg);
   margin-top: -100px;
 }
-.header .header-content {
+body .header .header-content {
   margin-top: 160px;
   transform: skew(0deg, -5deg);
 }
-.header span {
+body .header span {
   font-size: 20px;
   margin-bottom: 10px;
 }
-.header h1 {
+body .header h1 {
   margin-bottom: 20px;
   font-size: 40px;
 }
-.header p {
+body .header p {
   font-size: 14px;
 }
-.header .header-links {
+body .header .header-links {
   margin-top: 50px;
 }
-.header .header-links .link {
+body .header .header-links .link {
   margin: 0 20px;
   padding: 11px 30px;
   border: none;
@@ -49,52 +48,53 @@ body {
   background-color: white;
   text-decoration: none;
 }
-.header .header-links .link:hover {
+body .header .header-links .link:hover {
   background-color: #707070;
   color: white;
   border: 1px solid white;
 }
-
-.content {
-  position: relative;
+body .content {
+  margin: 0 10px;
+  width: 1100px;
+  height: 300px;
 }
-.content .text {
+body .content .text {
   position: absolute;
-  left: 200px;
+  left: 160px;
   width: 520px;
   height: 240px;
 }
-.content .text h2 {
+body .content .text h2 {
   margin: 10px 0px 20px 0px;
   color: #707070;
   font-size: 20px;
 }
-.content .text p {
+body .content .text p {
   color: #707070;
 }
-.content .form {
+body .content .form {
   position: absolute;
-  right: 101px;
+  right: 161px;
   width: 340px;
 }
-.content .form form {
+body .content .form form {
   display: flex;
   flex-direction: column;
 }
-.content .form form .labelForm {
+body .content .form form .labelForm {
   color: #707070;
   margin: 10px 10px 0 0;
   font-size: 14px;
 }
-.content .form form input {
+body .content .form form input {
   margin: 5px 0px;
   padding: 5px;
 }
-.content .form form .radioButtons {
+body .content .form form .radioButtons {
   flex-direction: row;
   margin: 10px 0px 20px 0px;
 }
-.content .form form .buttonSubmit {
+body .content .form form .buttonSubmit {
   padding: 10px;
   font-size: 16px;
   background-color: white;
@@ -102,73 +102,77 @@ body {
   border: 1px solid #707070;
   border-radius: 4px;
 }
-.content .form form .buttonSubmit:hover {
+body .content .form form .buttonSubmit:hover {
   background-color: #707070;
   color: white;
 }
-
-.store {
-  margin: 460px 0px 0px 200px;
+body .store {
+  margin: 30px 0px 0px 0px;
+}
+body .store .lineTxt {
   display: flex;
+  position: relative;
+  left: 140px;
+  width: 1020px;
   flex-direction: row;
   align-items: center;
-  position: relative;
 }
-.store .line {
+body .store .lineTxt .line {
   height: 1px;
-  width: 390px;
+  width: 380px;
   border: 1px solid rgba(184, 184, 184, 0.9);
 }
-.store h2 {
+body .store .lineTxt .text {
+  width: 201px;
+}
+body .store .lineTxt h2 {
   font-size: 18px;
   margin: 0 10px 0 10px;
   color: #707070;
 }
-.store .products-section {
-  width: 980px;
-  max-height: 1000px;
-  position: absolute;
-  top: 40px;
+body .store .products-section {
+  margin: 20px 0px 40px 130px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   color: #707070;
 }
-.store .products-section .products {
+body .store .products-section .products {
   width: 200px;
+  height: 300px;
   margin: 20px 20px;
 }
-.store .products-section .products .divProductImg {
+body .store .products-section .products .divProductImg {
   width: 200px;
   height: 140px;
   border: 1px solid #707070;
   margin-bottom: 10px;
   text-align: center;
 }
-.store .products-section .products .productName {
+body .store .products-section .products .productName {
   color: #707070;
   font-size: 14px;
   margin-bottom: 10px;
 }
-.store .products-section .products .productDescription {
+body .store .products-section .products .productDescription {
   color: #707070;
   font-size: 12px;
   margin: 5px 0px;
 }
-.store .products-section .products .oldPrice {
+body .store .products-section .products .oldPrice {
   font-size: 10px;
   margin-bottom: 5px;
 }
-.store .products-section .products .price {
+body .store .products-section .products .price {
   font-size: 16px;
   margin-bottom: 3px;
 }
-.store .products-section .products .installments {
+body .store .products-section .products .installments {
   font-size: 12px;
   display: block;
   margin-bottom: 10px;
 }
-.store .products-section .products .buyBtn {
+body .store .products-section .products .buyBtn {
   background-color: white;
   font-size: 16px;
   padding: 5px;
@@ -178,14 +182,15 @@ body {
   color: #707070;
   box-shadow: 1px 1px 1px #cccbcb;
 }
-.store .products-section .products .buyBtn:hover {
+body .store .products-section .products .buyBtn:hover {
   background-color: #707070;
   color: white;
 }
-.store .products-section .moreBtn {
-  position: relative;
-  left: 380px;
-  margin-top: 20px;
+body .store .btn {
+  margin-left: 505px;
+}
+body .store .btn .moreBtn {
+  width: 280px;
   background-color: white;
   font-size: 16px;
   padding: 5px 20px;
@@ -194,7 +199,72 @@ body {
   color: #707070;
   box-shadow: 1px 1px 1px #cccbcb;
 }
-.store .products-section .moreBtn:hover {
+body .store .btn .moreBtn:hover {
+  background-color: #707070;
+  color: white;
+}
+body .share .lineTxt {
+  margin: 100px 0px 40px 0px;
+  display: flex;
+  position: relative;
+  left: 140px;
+  width: 1050px;
+  flex-direction: row;
+  align-items: center;
+}
+body .share .lineTxt .line {
+  height: 1px;
+  width: 380px;
+  border: 1px solid rgba(184, 184, 184, 0.9);
+}
+body .share .lineTxt .text {
+  width: 201px;
+}
+body .share .lineTxt h2 {
+  font-size: 15px;
+  margin: 0 10px 0 15px;
+  color: #707070;
+}
+body .share span {
+  color: #707070;
+  font-size: 14px;
+  margin-left: 360px;
+}
+body .share .form {
+  margin: 40px 0px 20px 320px;
+  display: block;
+}
+body .share .form div {
+  display: flex;
+}
+body .share .form div .inputs {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0px 40px 0px 0px;
+}
+body .share .form div .inputs .labelShare {
+  color: #707070;
+  margin: 10px 10px 0 0;
+  font-size: 14px;
+}
+body .share .form div .inputs input {
+  margin: 5px 0px;
+  padding: 5px;
+}
+body .share .form .btnShare {
+  display: block;
+  width: 280px;
+  background-color: white;
+  font-size: 16px;
+  padding: 5px 20px;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  color: #707070;
+  box-shadow: 1px 1px 1px #cccbcb;
+  margin: 30px 0px 0px 190px;
+}
+body .share .form .btnShare:hover {
   background-color: #707070;
   color: white;
 }/*# sourceMappingURL=main.css.map */
