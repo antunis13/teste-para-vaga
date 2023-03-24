@@ -49,20 +49,31 @@
             </p>
         </div>
         <div class="form">
-            <form>
-                <label class="labelForm">Seu nome:</label>
-                <input type="text">
-                <label class="labelForm">E-mail:</label>
-                <input type="text">
-                <label class="labelForm">CPF:</label>
-                <input type="text">
-                <div class="radioButtons">
-                    <input type="radio">
-                    <label class="labelForm">Masculino</label>
-                    <input type="radio">
-                    <label class="labelForm">Feminino</label>
+            <form id="form">
+                <div class="form-control">
+                    <label class="labelForm">Seu nome:</label>
+                    <input type="text" id="name">
+                    <span></span>
                 </div>
-                <button class="buttonSubmit" type="submit">Enviar</button>
+                <div class="form-control">
+                    <label class="labelForm">E-mail:</label>
+                    <input type="email" id="email">
+                    <span></span>
+                </div>
+                <div class="form-control">
+                    <label class="labelForm">CPF:</label>
+                    <input type="number" id="cpf">
+                    <span></span>
+                </div>
+                
+                <div class="radioButtons">
+                    <input type="radio" id="inputRadio" name="gender" value="male">
+                    <label class="labelRadio">Masculino</label>
+                    <input type="radio" id="inputRadio"  name="gender" value="female">
+                    <label class="labelRadio">Feminino</label>
+                    <p id="radioMessage"></p>
+                </div>
+                <button class="buttonSubmit" type="submit" id="submit">Enviar</button>
             </form>
         </div>
 
@@ -98,24 +109,33 @@
         <span>
             Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!
         </span>
-        <form action="#" class="form">
+        <form action="#" class="formShare">
             <div>
                 <div class="inputs">
                     <label class="labelShare">
                         Nome do seu amigo:
                     </label>
-                    <input type="text">
+                    <input type="text" id="friendName">
+                    <span></span>
                 </div>
                 <div class="inputs">
                     <label class="labelShare">
                         E-mail:
                     </label>
-                    <input type="email" name="" id="">
+                    <input type="email" name="" id="emailShare">
+                    <span></span>
                 </div>
             </div>
-            <input type="button" value="Enviar agora" class="btnShare">
+            <button type="submit" class="btnShare">Enviar Agora</button>
         </form>
     </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <span>Testando suas habilidades em HTML, CSS e JS.</span>
+            <br>
+            <span>Linx Impulse <br> 2019</span>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>

@@ -5,7 +5,9 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     opacity: 1;
-    
+    /**************
+    -----HEADER----
+    **************/
     .header{
         color: $color-secundary;
         background-color: $color-primary;
@@ -53,6 +55,9 @@ body{
             }
         }
     }
+    /**************
+    ----CONTENT----
+    **************/
     .content{
         margin: 0 10px;
         width: 1100px;
@@ -79,24 +84,47 @@ body{
         form{
             display: flex;
             flex-direction: column;
-            .labelForm{
-                color: $color-primary;
-                margin: 10px 10px 0 0;
-                font-size: 14px;
-            }
-            input{
-                margin:5px 0px;
-                padding: 5px;
+            color: $color-primary;
+            .form-control{
+                display: flex;
+                flex-direction: column;
+
+                .labelForm{
+                    margin: 10px 10px 0 0;
+                    font-size: 14px;
+                }
+                input{
+                    margin:5px 0px;
+                    padding: 5px;
+                    &.error{
+                        border: 1px solid red;
+                    }
+                    &.succes{
+                        border: 1px solid green;
+                    }
+                }
+                .errorSpan{
+                    color: red;
+                    font-size: 12px;
+                }
+            
             }
             .radioButtons{
-                flex-direction: row;
-                margin: 10px 0px 20px 0px;
+                margin: 20px 0px 20px 0;
+                .labelRadio{
+                    margin: 10px 20px 0 0;
+                    font-size: 14px;
+                }
+                .errorRadio{
+                    color: red;
+                    font-size: 12px;
+                }
             }
             .buttonSubmit{
+                color: $color-primary;
                 padding: 10px;
                 font-size: 16px;
                 background-color: $color-secundary;
-                color: $color-primary;
                 border: 1px solid $color-primary;
                 border-radius: 4px;
                 &:hover{
@@ -107,6 +135,9 @@ body{
         }
     }
     }
+    /**************
+    -----STORE-----
+    **************/
     .store{
         margin: 30px 0px 0px 0px;
         .lineTxt{
@@ -206,6 +237,9 @@ body{
             }
         }
     }
+    /**************
+    -----SHARE-----
+    **************/
     .share{
         .lineTxt{
             margin: 100px 0px 40px 0px;
@@ -234,7 +268,7 @@ body{
             font-size: 14px;
             margin-left: 360px;
         }   
-        .form{
+        .formShare{
             margin: 40px 0px 20px 320px;
             display: block;
             div{
@@ -252,6 +286,18 @@ body{
                     input{
                         margin:5px 0px;
                         padding: 5px;
+                        &.error{
+                            border: 1px solid red;
+                        }
+                        &.succes{
+                            border: 1px solid green;
+                        }
+                    }
+                    .errorSpan{
+                        color: red;
+                        font-size: 12px;
+                        width: 200px;
+                        margin-left: 0px;
                     }
                 }
             }   
@@ -272,6 +318,21 @@ body{
                 }
 
             }
+        }
+    }
+    /**************
+    -----FOOTER----
+    **************/
+    .footer{
+        background-color: $color-primary;
+        color: $color-secundary;
+        text-align: center;
+        padding: 20px;
+        height: 350px;
+        margin-top: 80px ;
+        clip-path: polygon(0px 120px, 100% 0px, 100% 100%, 0px 100%);
+        .footer-content{
+            margin-top: 160px;
         }
     }
 }    
