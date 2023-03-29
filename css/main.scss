@@ -172,6 +172,7 @@ body{
                 width: 200px;
                 height: 300px;
                 margin: 20px 20px; 
+                
                 .divProductImg{
                     width: 200px;
                     height: 140px;
@@ -179,42 +180,44 @@ body{
                     margin-bottom: 10px;
                     text-align: center;
                 }
-                .productName{
-                    color: $color-primary;
-                    font-size: 14px;
-                    margin-bottom: 10px;
-                }
-                .productDescription{
-                    color: $color-primary;
-                    font-size: 12px;
-                    margin: 5px 0px;
-                }
-                .oldPrice{
-                    font-size: 10px;
-                    margin-bottom: 5px;
-                }
-                .price{
-                    font-size: 16px;
-                    margin-bottom: 3px;
-                }
-                .installments{
-                    font-size: 12px;
-                    display: block;
-                    margin-bottom: 10px ;
-                }
-                .buyBtn{
-                    background-color: $color-secundary;
-                    font-size: 16px;
-                    padding: 5px;
-                    width: 100%;
-                    border: 1px solid $color-primary;
-                    border-radius: 4px;
-                    color: $color-primary;
-                    box-shadow: 1px 1px 1px #cccbcb;
-
-                    &:hover{
-                        background-color: $color-primary;
-                        color: $color-secundary;
+                div{
+                    .productName{
+                        color: $color-primary;
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                    }
+                    .productDescription{
+                        color: $color-primary;
+                        font-size: 12px;
+                        margin: 5px 0px;
+                    }
+                    .oldPrice{
+                        font-size: 10px;
+                        margin-bottom: 5px;
+                    }
+                    .price{
+                        font-size: 16px;
+                        margin-bottom: 3px;
+                    }
+                    .installments{
+                        font-size: 12px;
+                        display: block;
+                        margin-bottom: 10px ;
+                    }
+                    .buyBtn{
+                        background-color: $color-secundary;
+                        font-size: 16px;
+                        padding: 5px;
+                        width: 100%;
+                        border: 1px solid $color-primary;
+                        border-radius: 4px;
+                        color: $color-primary;
+                        box-shadow: 1px 1px 1px #cccbcb;
+    
+                        &:hover{
+                            background-color: $color-primary;
+                            color: $color-secundary;
+                        }
                     }
                 }
             }
@@ -333,6 +336,333 @@ body{
         clip-path: polygon(0px 120px, 100% 0px, 100% 100%, 0px 100%);
         .footer-content{
             margin-top: 160px;
+        }
+    }
+    /*********************
+    -----MEDIA QUERIES----
+    **********************/
+    @media(max-width: 1190px){
+        .header{
+            width: 1240px;
+        }
+        .content{
+            .text{
+                left: 110px;
+            }
+            .form{
+                right: 20px;
+            }
+        }
+        .store{
+            .lineTxt{
+                left: 90px;
+                .line{
+                    width: 360px;
+                }
+            }
+            .products-section{
+                margin: 20px 0px 40px 240px;
+                .products{
+                    margin: 20px 10px;
+                }
+            }
+            .btn{
+                margin-left: 375px;
+            }
+            
+        }
+        .footer{
+            width: 1240px;
+        }
+    }
+    @media(max-width: 1020px){
+        .content{
+            .text{
+                left: 100px;
+            }
+            .form{
+                right: 0px;
+            }
+        }
+        .store{
+            .lineTxt{
+                left: 150px;
+                .line{
+                    width: 330px;
+                }
+            }
+            .products-section{
+                margin: 20px 0px 40px 140px;
+                .products{
+                    margin: 20px 10px;
+                }
+            }
+        }
+        .footer{
+            width: 1240px;
+        }
+        .store{
+            .lineTxt{
+                left: 90px;
+                .line{
+                    width: 360px;
+                }
+            }
+            .products-section{
+                margin: 20px 0px 40px 130px;
+                width: 600px;
+                align-items: center;
+                .products{
+                    margin: 20px 30px;
+                }
+            }   
+        }  
+        .share{
+            .lineTxt{
+    
+                .line{
+                    width: 280px;
+                }
+                .text{
+                    width: 201px;
+                }
+                h2{
+                    font-size: 15px;
+                }   
+            }
+            span{
+                margin-left: 240px;
+            } 
+            .formShare{
+                margin: 40px 0px 20px 240px;
+            }
+        }           
+    }
+    @media(max-width:420px){
+        .header{
+            height: 1000px;
+            text-align:left;
+
+            &.header-effect{
+                transform: skew(0deg, 13deg);
+                margin-top: -150px;
+            }
+            .header-content{
+                margin-top: 160px;
+                transform: skew(0deg, -13deg);
+            }
+            span{
+                font-size: 60px;
+                margin-bottom: 20px;
+            }
+            h1{
+                margin-bottom: 40px;
+                font-size: 120px;
+            }
+            p{
+                font-size: 52px;
+            }
+            .header-links{
+                margin-top: 100px;
+                margin-left: 50px;
+                height: 380px;
+                width: 1070px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .link{
+                    text-align: center;
+                    font-size: 50px;
+                    margin: 30px 40px;
+                    padding: 25px 20px;
+                    border: 2px solid $color-primary;
+                    width: 450px;
+                    height: 110px;
+                    border-radius: 10px;
+                }    
+            }         
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            width: 1070px;
+            height: 1000px;
+            .text{
+                text-align: left;
+                width: 1070px;
+                h2{
+                    font-size: 50px;
+                    margin-bottom: 30px;
+                }
+                p{
+                    font-size: 40px;
+                }
+            }
+            .form{
+                position:absolute;
+                width: 1050px;
+                top: 1660px;
+                left: 100px;
+                form{
+                    .form-control{
+                        .labelForm{
+                            font-size: 40px;
+                        }
+                        input{
+                            padding: 10px;
+                            font-size: 40px;
+                            border: 2px solid $color-primary;
+                        }
+                        .errorSpan{
+                            font-size: 35px;
+                        }
+                    }
+                    .radioButtons{
+                        .labelRadio{
+                            font-size: 40px;
+                        }
+                        #inputRadio{
+                            width: 40px;
+                            height: 40px;
+                            margin-right: 20px;
+                        }
+                        .errorRadio{
+                            font-size: 35px;
+                        }
+                    }
+                    .buttonSubmit{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+        .store{
+            .lineTxt{
+                top: 450px;
+                width: 1240px;
+                left: 0;
+                .text{
+                    width: 790px;
+                    h2{
+                        font-size: 45px;
+                    }
+                }
+                .line{
+                    border: 2px solid $color-primary;
+                    width: 625px;
+                }
+            }
+            .products-section{
+                margin: 470px 0px 40px 120px;
+                width:400px;
+                .products{
+                    margin: 20px 10px 30px 10px;
+                    width: 400px;
+                    height: 500px;
+                    display: flex;
+                    .divProductImg{
+                        width: 450px;
+                        height: 393px;
+                        img{
+                            width: 410px;
+                            height: 350px;
+                        }
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 30px;
+                        .productName{
+                            font-size: 45px;
+                            width: 500px;
+                        }
+                        .productDescription{
+                            font-size: 35px;
+                        }
+                        .oldPrice{
+                            font-size: 30px;
+                        }
+                        .price{
+                            font-size: 40px;
+                        }
+                        .installments{
+                            font-size: 30px;
+                        }
+                        .buyBtn{
+                            font-size: 45px;
+                            padding: 10px;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+            .btn{
+                margin-left: 250px;
+                .moreBtn{
+                    font-size: 60px;
+                    width: 760px;
+                    padding: 30px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .share{
+            width: 1180px;
+            .lineTxt{
+                width: 1240px;
+                left: 0;
+                .text{
+                    width: 790px;
+                    h2{
+                        font-size: 45px;
+                    }
+                }
+                .line{
+                    border: 2px solid $color-primary;
+                    width: 518px;
+                }
+            }
+            span{
+                font-size: 35px;
+                margin-left: 100px;
+            }
+            .formShare{
+                margin: 40px 0px 20px 30px; 
+                div{
+                    display: block;
+                    .inputs{
+                        width: 1180px;
+                        padding: 10px;
+                        .labelShare{
+                            font-size: 35px;
+                        }
+                        input{
+                            height: 80px;
+                            border: 1px solid $color-primary;
+                        }
+                        .errorSpan{
+                            font-size: 35px;
+                            width: 600px;
+                        }
+                    }
+                }
+                .btnShare{
+                    font-size: 45px;
+                    width: 800px;
+                    padding: 20px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .footer{
+            width: 1340px;
+            height: 430px;
+            .footer-content{
+                margin-top: 180px;
+                span{
+                    font-size: 40px;
+                }
+            }
         }
     }
 }    

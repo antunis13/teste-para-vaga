@@ -22,6 +22,9 @@ body {
   /**************
   -----FOOTER----
   **************/
+  /*********************
+  -----MEDIA QUERIES----
+  **********************/
 }
 body .header {
   color: white;
@@ -185,30 +188,30 @@ body .store .products-section .products .divProductImg {
   margin-bottom: 10px;
   text-align: center;
 }
-body .store .products-section .products .productName {
+body .store .products-section .products div .productName {
   color: #707070;
   font-size: 14px;
   margin-bottom: 10px;
 }
-body .store .products-section .products .productDescription {
+body .store .products-section .products div .productDescription {
   color: #707070;
   font-size: 12px;
   margin: 5px 0px;
 }
-body .store .products-section .products .oldPrice {
+body .store .products-section .products div .oldPrice {
   font-size: 10px;
   margin-bottom: 5px;
 }
-body .store .products-section .products .price {
+body .store .products-section .products div .price {
   font-size: 16px;
   margin-bottom: 3px;
 }
-body .store .products-section .products .installments {
+body .store .products-section .products div .installments {
   font-size: 12px;
   display: block;
   margin-bottom: 10px;
 }
-body .store .products-section .products .buyBtn {
+body .store .products-section .products div .buyBtn {
   background-color: white;
   font-size: 16px;
   padding: 5px;
@@ -218,7 +221,7 @@ body .store .products-section .products .buyBtn {
   color: #707070;
   box-shadow: 1px 1px 1px #cccbcb;
 }
-body .store .products-section .products .buyBtn:hover {
+body .store .products-section .products div .buyBtn:hover {
   background-color: #707070;
   color: white;
 }
@@ -328,4 +331,303 @@ body .footer {
 }
 body .footer .footer-content {
   margin-top: 160px;
+}
+@media (max-width: 1190px) {
+  body .header {
+    width: 1240px;
+  }
+  body .content .text {
+    left: 110px;
+  }
+  body .content .form {
+    right: 20px;
+  }
+  body .store .lineTxt {
+    left: 90px;
+  }
+  body .store .lineTxt .line {
+    width: 360px;
+  }
+  body .store .products-section {
+    margin: 20px 0px 40px 240px;
+  }
+  body .store .products-section .products {
+    margin: 20px 10px;
+  }
+  body .store .btn {
+    margin-left: 375px;
+  }
+  body .footer {
+    width: 1240px;
+  }
+}
+@media (max-width: 1020px) {
+  body .content .text {
+    left: 100px;
+  }
+  body .content .form {
+    right: 0px;
+  }
+  body .store .lineTxt {
+    left: 150px;
+  }
+  body .store .lineTxt .line {
+    width: 330px;
+  }
+  body .store .products-section {
+    margin: 20px 0px 40px 140px;
+  }
+  body .store .products-section .products {
+    margin: 20px 10px;
+  }
+  body .footer {
+    width: 1240px;
+  }
+  body .store .lineTxt {
+    left: 90px;
+  }
+  body .store .lineTxt .line {
+    width: 360px;
+  }
+  body .store .products-section {
+    margin: 20px 0px 40px 130px;
+    width: 600px;
+    align-items: center;
+  }
+  body .store .products-section .products {
+    margin: 20px 30px;
+  }
+  body .share .lineTxt .line {
+    width: 280px;
+  }
+  body .share .lineTxt .text {
+    width: 201px;
+  }
+  body .share .lineTxt h2 {
+    font-size: 15px;
+  }
+  body .share span {
+    margin-left: 240px;
+  }
+  body .share .formShare {
+    margin: 40px 0px 20px 240px;
+  }
+}
+@media (max-width: 420px) {
+  body .header {
+    height: 1000px;
+    text-align: left;
+  }
+  body .header.header-effect {
+    transform: skew(0deg, 13deg);
+    margin-top: -150px;
+  }
+  body .header .header-content {
+    margin-top: 160px;
+    transform: skew(0deg, -13deg);
+  }
+  body .header span {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  body .header h1 {
+    margin-bottom: 40px;
+    font-size: 120px;
+  }
+  body .header p {
+    font-size: 52px;
+  }
+  body .header .header-links {
+    margin-top: 100px;
+    margin-left: 50px;
+    height: 380px;
+    width: 1070px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  body .header .header-links .link {
+    text-align: center;
+    font-size: 50px;
+    margin: 30px 40px;
+    padding: 25px 20px;
+    border: 2px solid #707070;
+    width: 450px;
+    height: 110px;
+    border-radius: 10px;
+  }
+  body .content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1070px;
+    height: 1000px;
+  }
+  body .content .text {
+    text-align: left;
+    width: 1070px;
+  }
+  body .content .text h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  body .content .text p {
+    font-size: 40px;
+  }
+  body .content .form {
+    position: absolute;
+    width: 1050px;
+    top: 1660px;
+    left: 100px;
+  }
+  body .content .form form .form-control .labelForm {
+    font-size: 40px;
+  }
+  body .content .form form .form-control input {
+    padding: 10px;
+    font-size: 40px;
+    border: 2px solid #707070;
+  }
+  body .content .form form .form-control .errorSpan {
+    font-size: 35px;
+  }
+  body .content .form form .radioButtons .labelRadio {
+    font-size: 40px;
+  }
+  body .content .form form .radioButtons #inputRadio {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+  body .content .form form .radioButtons .errorRadio {
+    font-size: 35px;
+  }
+  body .content .form form .buttonSubmit {
+    font-size: 40px;
+  }
+  body .store .lineTxt {
+    top: 450px;
+    width: 1240px;
+    left: 0;
+  }
+  body .store .lineTxt .text {
+    width: 790px;
+  }
+  body .store .lineTxt .text h2 {
+    font-size: 45px;
+  }
+  body .store .lineTxt .line {
+    border: 2px solid #707070;
+    width: 625px;
+  }
+  body .store .products-section {
+    margin: 470px 0px 40px 120px;
+    width: 400px;
+  }
+  body .store .products-section .products {
+    margin: 20px 10px 30px 10px;
+    width: 400px;
+    height: 500px;
+    display: flex;
+  }
+  body .store .products-section .products .divProductImg {
+    width: 450px;
+    height: 393px;
+  }
+  body .store .products-section .products .divProductImg img {
+    width: 410px;
+    height: 350px;
+  }
+  body .store .products-section .products div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  body .store .products-section .products div .productName {
+    font-size: 45px;
+    width: 500px;
+  }
+  body .store .products-section .products div .productDescription {
+    font-size: 35px;
+  }
+  body .store .products-section .products div .oldPrice {
+    font-size: 30px;
+  }
+  body .store .products-section .products div .price {
+    font-size: 40px;
+  }
+  body .store .products-section .products div .installments {
+    font-size: 30px;
+  }
+  body .store .products-section .products div .buyBtn {
+    font-size: 45px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  body .store .btn {
+    margin-left: 250px;
+  }
+  body .store .btn .moreBtn {
+    font-size: 60px;
+    width: 760px;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  body .share {
+    width: 1180px;
+  }
+  body .share .lineTxt {
+    width: 1240px;
+    left: 0;
+  }
+  body .share .lineTxt .text {
+    width: 790px;
+  }
+  body .share .lineTxt .text h2 {
+    font-size: 45px;
+  }
+  body .share .lineTxt .line {
+    border: 2px solid #707070;
+    width: 518px;
+  }
+  body .share span {
+    font-size: 35px;
+    margin-left: 100px;
+  }
+  body .share .formShare {
+    margin: 40px 0px 20px 30px;
+  }
+  body .share .formShare div {
+    display: block;
+  }
+  body .share .formShare div .inputs {
+    width: 1180px;
+    padding: 10px;
+  }
+  body .share .formShare div .inputs .labelShare {
+    font-size: 35px;
+  }
+  body .share .formShare div .inputs input {
+    height: 80px;
+    border: 1px solid #707070;
+  }
+  body .share .formShare div .inputs .errorSpan {
+    font-size: 35px;
+    width: 600px;
+  }
+  body .share .formShare .btnShare {
+    font-size: 45px;
+    width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  body .footer {
+    width: 1340px;
+    height: 430px;
+  }
+  body .footer .footer-content {
+    margin-top: 180px;
+  }
+  body .footer .footer-content span {
+    font-size: 40px;
+  }
 }/*# sourceMappingURL=main.css.map */
