@@ -269,6 +269,11 @@ body .share span {
   font-size: 14px;
   margin-left: 360px;
 }
+body .share p {
+  color: #707070;
+  font-size: 14px;
+  margin-left: 360px;
+}
 body .share .formShare {
   margin: 40px 0px 20px 320px;
   display: block;
@@ -361,60 +366,9 @@ body .footer .footer-content {
     width: 1240px;
   }
 }
-@media (max-width: 1020px) {
-  body .content .text {
-    left: 100px;
-  }
-  body .content .form {
-    right: 0px;
-  }
-  body .store .lineTxt {
-    left: 150px;
-  }
-  body .store .lineTxt .line {
-    width: 330px;
-  }
-  body .store .products-section {
-    margin: 20px 0px 40px 140px;
-  }
-  body .store .products-section .products {
-    margin: 20px 10px;
-  }
-  body .footer {
-    width: 1240px;
-  }
-  body .store .lineTxt {
-    left: 90px;
-  }
-  body .store .lineTxt .line {
-    width: 360px;
-  }
-  body .store .products-section {
-    margin: 20px 0px 40px 130px;
-    width: 600px;
-    align-items: center;
-  }
-  body .store .products-section .products {
-    margin: 20px 30px;
-  }
-  body .share .lineTxt .line {
-    width: 280px;
-  }
-  body .share .lineTxt .text {
-    width: 201px;
-  }
-  body .share .lineTxt h2 {
-    font-size: 15px;
-  }
-  body .share span {
-    margin-left: 240px;
-  }
-  body .share .formShare {
-    margin: 40px 0px 20px 240px;
-  }
-}
 @media (max-width: 420px) {
   body .header {
+    width: 1340px;
     height: 1000px;
     text-align: left;
   }
@@ -506,7 +460,7 @@ body .footer .footer-content {
   }
   body .store .lineTxt {
     top: 450px;
-    width: 1240px;
+    width: 1340px;
     left: 0;
   }
   body .store .lineTxt .text {
@@ -517,7 +471,7 @@ body .footer .footer-content {
   }
   body .store .lineTxt .line {
     border: 2px solid #707070;
-    width: 625px;
+    width: 725px;
   }
   body .store .products-section {
     margin: 470px 0px 40px 120px;
@@ -576,7 +530,7 @@ body .footer .footer-content {
     width: 1180px;
   }
   body .share .lineTxt {
-    width: 1240px;
+    width: 1340px;
     left: 0;
   }
   body .share .lineTxt .text {
@@ -587,9 +541,13 @@ body .footer .footer-content {
   }
   body .share .lineTxt .line {
     border: 2px solid #707070;
-    width: 518px;
+    width: 586px;
   }
   body .share span {
+    font-size: 35px;
+    margin-left: 100px;
+  }
+  body .share p {
     font-size: 35px;
     margin-left: 100px;
   }

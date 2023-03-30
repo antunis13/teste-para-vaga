@@ -270,7 +270,12 @@ body{
             color: $color-primary;
             font-size: 14px;
             margin-left: 360px;
-        }   
+        }  
+        p{
+            color: $color-primary;
+            font-size: 14px;
+            margin-left: 360px;
+        } 
         .formShare{
             margin: 40px 0px 20px 320px;
             display: block;
@@ -375,71 +380,9 @@ body{
             width: 1240px;
         }
     }
-    @media(max-width: 1020px){
-        .content{
-            .text{
-                left: 100px;
-            }
-            .form{
-                right: 0px;
-            }
-        }
-        .store{
-            .lineTxt{
-                left: 150px;
-                .line{
-                    width: 330px;
-                }
-            }
-            .products-section{
-                margin: 20px 0px 40px 140px;
-                .products{
-                    margin: 20px 10px;
-                }
-            }
-        }
-        .footer{
-            width: 1240px;
-        }
-        .store{
-            .lineTxt{
-                left: 90px;
-                .line{
-                    width: 360px;
-                }
-            }
-            .products-section{
-                margin: 20px 0px 40px 130px;
-                width: 600px;
-                align-items: center;
-                .products{
-                    margin: 20px 30px;
-                }
-            }   
-        }  
-        .share{
-            .lineTxt{
-    
-                .line{
-                    width: 280px;
-                }
-                .text{
-                    width: 201px;
-                }
-                h2{
-                    font-size: 15px;
-                }   
-            }
-            span{
-                margin-left: 240px;
-            } 
-            .formShare{
-                margin: 40px 0px 20px 240px;
-            }
-        }           
-    }
     @media(max-width:420px){
         .header{
+            width: 1340px;
             height: 1000px;
             text-align:left;
 
@@ -539,7 +482,7 @@ body{
         .store{
             .lineTxt{
                 top: 450px;
-                width: 1240px;
+                width: 1340px;
                 left: 0;
                 .text{
                     width: 790px;
@@ -549,7 +492,7 @@ body{
                 }
                 .line{
                     border: 2px solid $color-primary;
-                    width: 625px;
+                    width: 725px;
                 }
             }
             .products-section{
@@ -609,7 +552,7 @@ body{
         .share{
             width: 1180px;
             .lineTxt{
-                width: 1240px;
+                width: 1340px;
                 left: 0;
                 .text{
                     width: 790px;
@@ -619,10 +562,14 @@ body{
                 }
                 .line{
                     border: 2px solid $color-primary;
-                    width: 518px;
+                    width: 586px;
                 }
             }
             span{
+                font-size: 35px;
+                margin-left: 100px;
+            }
+            p{
                 font-size: 35px;
                 margin-left: 100px;
             }
